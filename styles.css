@@ -9,6 +9,10 @@ body {
   background-image: url('images/t-shirt-background.jpg');
 }
 
+.background2 {
+  background-color: black;
+}
+
 .navbar {
   background-color: white;
   box-shadow: 0px 0px 10px 2px black;
@@ -47,16 +51,17 @@ body {
 }
 
 .sh {
-  width: 700px;
+  width: 720px;
   height: 68px;
   position: relative;
   top: 380px;
-  right: -380px;
+  right: -365px;
   background-color: white;
   cursor: pointer;
   border-radius: 10px;
   font-size: 25px;
   border: 2px solid black;
+  text-align: center;
 }
 
 .log {
@@ -64,12 +69,13 @@ body {
   height: 68px;
   position: relative;
   top: 600px;
-  right: 422px;
+  right: 450px;
   background-color: white;
   cursor: pointer;
   border-radius: 10px;
   font-size: 25px;
   border: 2px solid black;
+  text-align: center;
 }
 
 .sign {
@@ -77,12 +83,13 @@ body {
   height: 68px;
   position: relative;
   top: 500px;
-  right: 120px;
+  right: 145px;
   background-color: white;
   cursor: pointer;
   border-radius: 10px;
   font-size: 25px;
   border: 2px solid black;
+  text-align: center;
 }
 
 #searchInput {
