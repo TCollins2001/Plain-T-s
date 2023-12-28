@@ -265,3 +265,14 @@ body {
   color:grey;
 }
 
+.about-box {
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: 120px;
+  left: 23%;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  padding-bottom: 50px;
+}
