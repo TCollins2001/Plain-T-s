@@ -276,3 +276,102 @@ body {
   color: white;
   padding-bottom: 50px;
 }
+
+.product img {
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px black;
+  border-radius: 10px;
+  position: relative;
+  top: 220px;
+  left: 100px;
+  width: 500px;
+}
+
+.product-details {
+  position: relative;
+  left: 670px;
+}
+
+.product-name, .price, .product-details p {
+  color: white;
+  position: relative;
+  top: -360px;
+  width: 50%;
+}
+
+.price {
+  color: white;
+  position: relative;
+  top: -320px;
+  width: 50%;
+}
+
+.product-divider {
+  border: .05px solid grey;
+  width: 50%;
+  position: relative;
+  top: -300px;
+}
+
+.product-details h3 {
+  color: white;
+  position: relative;
+  top: -290px;
+}
+
+.sizes button {
+  font-size: 17px;
+  font-weight: bold;
+  width: 50px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.sizes li {
+  display: inline;
+  margin-right: 20px;
+  position: relative;
+  top: -280px;
+  right: 40px;
+}
+
+.quan h3 {
+  color: white;
+  position: relative;
+  top: -260px;
+}
+
+.quan input {
+  position: relative;
+  top: -260px;
+  width: 50px;
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+}
+
+.atc button {
+  position: relative;
+  top: -220px; 
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px white;
+  font-weight: bold;
+  width: 350px;
+}
+
+.item3-2 img {
+  width: 330px;
+  height: 300px;
+  position: relative;
+  top: 7px;
+}
+
+.item4-2 img {
+  width: 300px;
+  height: 390px;
+  position: relative;
+  top: 7px;
+}
