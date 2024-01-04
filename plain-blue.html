@@ -26,23 +26,23 @@
       <img src="images/Plain-Blue-Shirt.png" alt="blue t" />
     </div>
     <div class="product-details">
-      <h1 class="product-name">Plain Blue Shirt</h2>
+      <h1 class="product-name">Plain Blue Shirt</h1>
         <p>Introducing our Classic Blue T-Shirt – a wardrobe staple that effortlessly combines simplicity with style. Crafted from high-quality cotton, this versatile piece is a testament to timeless fashion. The shirt features a sleek, blue hue that exudes sophistication and pairs seamlessly with any outfit. Elevate your wardrobe essentials with this Classic Blue T-Shirt – a symbol of understated elegance and enduring fashion.</p>
         <h1 class="price">$20.99</h1>
         <div class="product-divider"></div>
         <h3>Size</h3>
         <ul class="sizes">
-          <li><button type="button">XS</button></li>
-          <li><button type="button">S</button></li>
-          <li><button type="button">M</button></li>
-          <li><button type="button">L</button></li>
-          <li><button type="button">XL</button></li>
+          <li><button type="button" onclick="selectSize(this)">XS</button></li>
+          <li><button type="button" onclick="selectSize(this)">S</button></li>
+          <li><button type="button" onclick="selectSize(this)">M</button></li>
+          <li><button type="button" onclick="selectSize(this)">L</button></li>
+          <li><button type="button" onclick="selectSize(this)">XL</button></li>
         </ul>
         <div class="quan">
         <h3>Qty</h3>
         <input type="number" id="quantity" name="quantity" min="1" value="1">
       </div>
       <div class="atc">
-      <button type="button">Add to Cart</button>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
     </div>
     </div>

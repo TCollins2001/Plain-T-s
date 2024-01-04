@@ -326,6 +326,7 @@ body {
   height: 40px;
   background-color: white;
   box-shadow: 0px 0px 2px 2px white;
+  cursor: pointer;
 }
 
 .sizes li {
@@ -334,6 +335,11 @@ body {
   position: relative;
   top: -280px;
   right: 40px;
+}
+
+.sizes button.selected {
+  background-color: black; 
+  color: #fff;
 }
 
 .quan h3 {
@@ -360,6 +366,7 @@ body {
   box-shadow: 0px 0px 2px 2px white;
   font-weight: bold;
   width: 350px;
+  cursor: pointer;
 }
 
 .item3-2 img {
@@ -374,4 +381,110 @@ body {
   height: 390px;
   position: relative;
   top: 7px;
+}
+
+#empty-cart-message {
+  position: relative;
+  top: 350px;
+  left: 26%;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  width: 43.5%;
+  padding: 11px;
+  border-radius: 30px;
+}
+
+.cart-item {
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px black;
+  border-radius: 10px;
+  position: relative;
+  left: 5%;
+  width: 800px;
+  height: 350px;
+  margin-top: 150px;
+}
+
+.cart-item img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 15px;
+  border-right: 2px solid black;
+  padding-right: 100px;
+}
+
+.cart-item p {
+  font-size: 28px;
+  position: relative;
+  top: -290px;
+  left: 63%;
+}
+
+.cart-item button {
+  position: relative;
+  top: -290px;
+  left: 63%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#totals-container {
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px black;
+  border-radius: 10px;
+  position: absolute;
+  left: 68%;
+  width: 400px;
+  height: 600px;
+  top: 120px;
+}
+
+.totals {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 22px;
+}
+
+.totals h2 {
+  text-decoration: underline;
+}
+
+.totals img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  left: 12%;
+}
+
+.totals button {
+  position: relative;
+  top: -80px;
+  right: 27%;
+  width: 90px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.thank-you {
+  position: relative;
+  top: 280px;
+  left: 24%;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  padding: 11px;
+  text-align: center;
+  width: 50%;
+  border-radius: 30px;
+}
+
+.thank-you a {
+  color: white;
 }
