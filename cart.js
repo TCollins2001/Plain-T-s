@@ -1,3 +1,14 @@
+function updateCartCount(count) {
+  console.log("Updating cart count:", count);
+
+  const cartCountElement = document.getElementById("cart-count");
+
+  if (cartCountElement) {
+    cartCountElement.textContent = count;
+    localStorage.setItem("cartCount", count);
+  }
+}
+
 function displayCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -43,6 +54,9 @@ function displayCart() {
       const sizeElement = document.createElement("p");
       sizeElement.textContent = `Size: ${item.size}`;
       cartItemDiv.appendChild(sizeElement);
+
+      const cartCount = cart.length;
+      updateCartCount(cartCount);
     }
     
     const deleteButton = document.createElement("button");
@@ -112,16 +126,14 @@ function selectSize(button) {
 }
 
 function deleteItem(index) {
-  
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  
   cart.splice(index, 1);
-
-  
   localStorage.setItem("cart", JSON.stringify(cart));
 
   displayCart();
+
+  const cartCount = cart.length;
+  updateCartCount(cartCount);
 }
 
 let selectedSize = ''; 
@@ -149,7 +161,6 @@ function addToCart() {
     size: selectedSize,
   };
 
-  
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   function saveCart() {
@@ -174,6 +185,9 @@ function addToCart() {
 
   
   window.location.href = "cart.html";
+
+  const cartCount = cart.length;
+  updateCartCount(cartCount);
 }
 
 displayCart();

@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plain-T's | My Cart</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script defer src="cart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const storedCartCount = localStorage.getItem("cartCount");
+      const cartCount = storedCartCount ? parseInt(storedCartCount) : 0;
+      updateCartCount(cartCount);
+    });
+  </script>
 </head>
 <body class="background">
   <nav class="navbar">
@@ -13,7 +21,7 @@
     <ul class="navlinks">
       <li><a href="index.html">HOME</a></li>
       <li><a href="shop.html">SHOP</a></li>
-      <li><a href="cart.html">MY CART</a></li>
+      <li><a href="cart.html">MY CART <i class="fa-solid fa-cart-shopping"><span id="cart-count">(0)</span></i></a></li>
       <li><a href="account.html">MY ACCOUNT</a></li>
       <li><a href="about.html">ABOUT US</a></li>
     </ul>
