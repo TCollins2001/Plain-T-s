@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plain-T's | Home</title>
+    <title>Plain-T's | Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script defer src="search.js"></script>
@@ -15,6 +15,7 @@
         updateCartCount(cartCount);
       });
     </script>
+    <script defer src="signup.js"></script>
   </head>
   <body class="background">
     <nav class="navbar">
@@ -27,26 +28,17 @@
         <li><a href="about.html">ABOUT US</a></li>
       </ul>
     </nav>
-    <button
-      class="sh"
-      type="button"
-      onclick="window.location.href='shop.html';"
-    >
-      SHOP NOW 
-    </button>
-    <button
-      class="sign"
-      type="button"
-      onclick="window.location.href='signup.html';"
-    >
-      SIGN UP
-    </button>
-    <button
-      class="log"
-      type="button"
-      onclick="window.location.href='login.html';"
-    >
-      LOGIN
-    </button>
-  </body>
-</html>
+    <form id="signup-form">
+      <h1>Sign Up</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+  
+      <button type="button" onclick="signup()">Sign Up</button>
+    </form>
+  </body>  

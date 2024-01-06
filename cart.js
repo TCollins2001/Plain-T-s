@@ -26,6 +26,7 @@ function displayCart() {
   }
 
   let subtotal = 0;
+  let totalQuantity = 0;
 
   cart.forEach((item, index) => {
     const cartItemDiv = document.createElement("div");
@@ -50,13 +51,14 @@ function displayCart() {
     quantityElement.textContent = `Qty: ${item.quantity}`;
     cartItemDiv.appendChild(quantityElement);
 
+    totalQuantity += item.quantity;
+
     if (item.size) {
       const sizeElement = document.createElement("p");
       sizeElement.textContent = `Size: ${item.size}`;
       cartItemDiv.appendChild(sizeElement);
 
-      const cartCount = cart.length;
-      updateCartCount(cartCount);
+      updateCartCount(totalQuantity);
     }
     
     const deleteButton = document.createElement("button");
@@ -199,15 +201,17 @@ function placeOrder() {
 
     localStorage.removeItem("cart");
 
+    const cartContainer = document.getElementById("cart-container");
+    const emptyCartMessage = document.getElementById("empty-cart-message");
+
+    updateCartCount(0);
+
     body.innerHTML = `
       <div class="thank-you">
         <h1>THANK YOU FOR YOUR ORDER!</h1>
         <a href="shop.html">&#x2190; RETURN TO SHOP</a>
       </div>
     `;
-
-    const cartContainer = document.getElementById("cart-container");
-      const emptyCartMessage = document.getElementById("empty-cart-message");
 
       cartContainer.innerHTML = "";
       emptyCartMessage.style.display = "block";
