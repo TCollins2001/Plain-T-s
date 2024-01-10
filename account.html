@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plain-T's | My Account</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="account.js"></script>
-</head>
-<body class="background">
-  <nav class="navbar">
-    <ul class="navlinks">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="cart.html">MY CART <i class="fa-solid fa-cart-shopping"><span id="cart-count">(0)</span></i></a></li>
-      <li><a href="account.html">MY ACCOUNT</a></li>
-      <li><a href="about.html">ABOUT US</a></li>
-    </ul>
-  </nav>
-  <div id="account-info">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plain-T's | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="search.js"></script>
+    <script defer src="cart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const storedCartCount = localStorage.getItem("cartCount");
+        const cartCount = storedCartCount ? parseInt(storedCartCount) : 0;
+        updateCartCount(cartCount);
+      });
+    </script>
+  </head>
+  <body class="background">
+    <nav class="navbar">
+      <img src="images/shirt-logo.png" alt="logo of site" />
+      <ul class="navlinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="cart.html">MY CART <i class="fa-solid fa-cart-shopping"><span id="cart-count">(0)</span></i></a></li>
+        <li><a href="account.html">MY ACCOUNT</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>
+    <div class="welcome-account">
+    <h1><span id="welcome-message"></span></h1>
   </div>
-</body>
-</html>
+    <script type="module" src="account.js"></script>
+  </body>

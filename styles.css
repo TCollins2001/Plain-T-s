@@ -83,8 +83,8 @@ body {
   width: 300px;
   height: 68px;
   position: relative;
-  top: 500px;
-  right: 462px;
+  top: 420px;
+  right: -544px;
   background-color: white;
   cursor: pointer;
   border-radius: 10px;
@@ -613,4 +613,41 @@ body {
 #login-form button:hover {
   background-color: black;
   color: white;
+}
+
+.welcome-index {
+  position: relative; 
+  top: 100px;
+  float: right;
+  right: 12px;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.welcome-index a {
+  color: white;
+}
+
+.welcome-shop {
+  position: relative; 
+  top: 100px;
+  float: right;
+  right: 12px;
+  font-size: 8px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.welcome-shop a {
+  color: white;
+}
+
+.welcome-account h1 {
+  position: relative; 
+  top: 200px;
 }

@@ -14,8 +14,7 @@
         const cartCount = storedCartCount ? parseInt(storedCartCount) : 0;
         updateCartCount(cartCount);
       });
-    </script>
-    <script defer src="login.js"></script>
+      </script>
   </head>
   <body class="background">
     <nav class="navbar">
@@ -30,12 +29,14 @@
     </nav>
     <form id="login-form">
       <h1>Login</h1>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
   
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
   
-      <button type="button" onclick="login()">Login</button>
+      <button type="button" id="submitData">Login</button>
     </form>
-    </body>
+    <script type="module" src="login.js"></script>
+  </body>
+    </html>
